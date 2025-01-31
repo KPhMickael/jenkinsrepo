@@ -1,30 +1,41 @@
 # test_pylint.py
 
+"""
+Ce module contient des exemples de bonnes pratiques et des erreurs de style que pylint peut détecter.
+Il inclut des exemples de fonctions simples, ainsi que des problèmes liés aux conventions de nommage et de style.
+"""
+
 def greet(name):
-    # This function greets the person passed in as parameter
+    """
+    Cette fonction salue la personne passée en paramètre.
+
+    Parameters:
+    name (str): Le nom de la personne à saluer.
+    """
     print('Hello, ' + name)
 
 def calculate_sum(a, b):
-    """Calculate the sum of two numbers."""
+    """Calculer la somme de deux nombres."""
     return a + b
 
-# Mixing styles can lead to style warnings
-def mixed_style():
+# Exemple de fonction respectant les conventions de style
+def sum_two_numbers():
     a = 1
     b = 2
     return a + b
 
-# Unused variable
-unused = 10
+# Constante : utilise une variable en majuscules pour signaler qu'elle ne doit pas être modifiée.
+UNUSED = 10
 
 greet("World")
-print(calculate_sum(5,3))
+print(calculate_sum(5, 3))
 
-# This function is defined but never called
+# Cette fonction est définie mais jamais appelée, tu peux la supprimer ou l'utiliser.
 def unused_function():
     pass
 
-# Long line to exceed max line length
-this_is_a_really_long_variable_name_that_will_probably_exceed_the_80_character_limit_set_by_most_style_guidelines = "Long string"
+# La variable avec un nom trop long est divisée en deux lignes.
+LONG_VARIABLE_NAME = (
+    "Long string that exceeds the 80-character limit set by most style guidelines"
+)
 
-# Missing docstring for a module
