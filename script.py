@@ -1,8 +1,10 @@
 # test_pylint.py
 
 """
-Ce module contient des exemples de bonnes pratiques et des erreurs de style que pylint peut détecter.
-Il inclut des exemples de fonctions simples, ainsi que des problèmes liés aux conventions de nommage et de style.
+Ce module contient des exemples de bonnes 
+pratiques et des erreurs de style que pylint peut détecter.
+Il inclut des exemples de fonctions simples, 
+ainsi que des problèmes liés aux conventions de nommage et de style.
 """
 
 def greet(name):
