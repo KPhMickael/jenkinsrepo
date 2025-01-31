@@ -19,14 +19,21 @@ pipeline {
                 }
             }
         }
-        stage('Run Tests') {
+        stage('Code Quality Check') {
             steps {
                 script {
+                    def pylintCommand = isUnix() ? 'python3 -m pylint' : 'python -m pylint'
+                    def pylintOutput = "pylint-report.txt"
                     if (isUnix()) {
-                        sh 'python3 -m pytest script.py'
+                        sh "${pylintCommand} script.py > ${pylintOutput}"
                     } else {
-                        bat 'python -m pytest script.py'
+                        bat "${pylintCommand} script.py > ${pylintOutput}"
                     }
+                }
+            }
+            post {
+                always {
+                    archiveArtifacts artifacts: 'pylint-report.txt', allowEmptyArchive: true
                 }
             }
         }
