@@ -35,11 +35,9 @@ UNUSED = 10
 greet("World")
 print(calculate_sum(5, 3))
 
-# Cette fonction est définie mais jamais appelée, tu peux la supprimer ou l'utiliser.
+# Cette fonction est définie mais jamais appelée, elle a été laissée vide délibérément.
 def unused_function():
-    """
-    Fonction inutilisée, définie pour illustration.
-    """
+    # Fonction inutilisée volontairement
     pass
 
 # La variable avec un nom trop long est divisée en deux lignes.
