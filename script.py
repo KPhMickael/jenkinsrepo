@@ -43,12 +43,10 @@ def unused_function():
     Cette fonction est définie mais n'est pas utilisée.
     Elle est laissée vide à des fins d'illustration ou pour être complétée ultérieurement.
     """
-    pass
+    # Aucune action ici, la fonction est volontairement vide.
 
 # La variable avec un nom trop long est divisée en deux lignes.
 LONG_VARIABLE_NAME = (
     "Long string that exceeds the 80-character limit "
     "set by most style guidelines"
 )
-
-
