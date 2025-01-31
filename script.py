@@ -39,7 +39,10 @@ print(calculate_sum(5, 3))
 
 # Cette fonction est définie mais jamais appelée, elle a été laissée vide délibérément.
 def unused_function():
-    # Fonction inutilisée volontairement
+    """
+    Cette fonction est définie mais n'est pas utilisée.
+    Elle est laissée vide à des fins d'illustration ou pour être complétée ultérieurement.
+    """
     pass
 
 # La variable avec un nom trop long est divisée en deux lignes.
@@ -47,3 +50,5 @@ LONG_VARIABLE_NAME = (
     "Long string that exceeds the 80-character limit "
     "set by most style guidelines"
 )
+
+
